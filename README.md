@@ -141,7 +141,10 @@ In the second terminal, run
 python3 QSign.py <NUM_QUBITS>
 ```
 
+
 where ```NUM_QUBITS``` is an integer number in the range [2,100] you have to give as an input. It corresponds to the number of states used in the protocol.
+
+>[!IMPORTANT]
 > Higher values of ```NUM_QUBITS``` will result in better statistics in the end, but will need higher runtime. For example, for ```NUM_QUBITS=100``` the procedure needs ~ 3 minutes to run, while for ```NUM_QUBITS=10``` it needs ~ 30 seconds to run.
 
 In the third, fourth and fifth terminal, run these respectively
