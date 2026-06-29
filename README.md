@@ -23,7 +23,7 @@ $$ f(x) = s + \alpha x + \beta x^2 \mod p$$
 
 where $p$ is a prime number, and the intercept of the polynomial $s=f(0)$ is referred to as the "secret". We proceed by randomly choosing a random phase 
 
-$$\phi \in \mathbf{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2} \}$$
+$$ \phi \in \mathbf{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2} \} $$
 
 Then, we apply a gate with this randomly chosen phase as well as an additional phase based on the polynomial secret on a qubit which is initially in the $\ket{+}$ state
 
@@ -78,14 +78,13 @@ $$ \ket{\psi}_{\text{final}} = \frac{\ket{0}+e^{i\chi}\ket{1}}{\sqrt{2}}$$
 Where $\chi$ depends on $\left(\phi + \sum_i \phi_i\right)$, the structure of the polynomial as well as the combination of executives who did not sign the document (e.g.: only CEO, CFO + CLO, etc.). The interesting thing is that this state still has a non-zero probability of being projected onto the state we would expect in the case everyone signed, fooling us into thinking that this happened. For example, for the 4 different cases for $\left(\phi + \sum_i \phi_i\right)$, we measure in the appropriate basis and expect that we will project the state to corresponding eigenstate. The probability of this happening for the different cases is
 
 $$
-P\left(\ket{\psi}_{\text{final}} \to \ket{+}\right) = \cos^2\left(\frac{\chi}{2}\right) \quad \left(\phi + \sum_i \phi_i = 0\right) \\
+P\left(\ket{\psi}_{\text{final}} \to \ket{+}\right) = \cos^2\left(\frac{\chi}{2}\right) \quad \left(\phi + \sum_i \phi_i = 0\right) $$
 
-P\left(\ket{\psi}_{\text{final}} \to \ket{i}\right) = \frac{1}{2}(1-\sin(\chi)) \quad \left(\phi + \sum_i \phi_i = \frac{\pi}{2} \right) \\
+$$ P\left(\ket{\psi}_{\text{final}} \to \ket{i}\right) = \frac{1}{2}(1-\sin(\chi)) \quad \left(\phi + \sum_i \phi_i = \frac{\pi}{2} \right) $$
 
-P\left(\ket{\psi}_{\text{final}} \to \ket{-}\right) = \sin^2\left(\frac{\chi}{2}\right) \quad \left(\phi + \sum_i \phi_i = \pi\right) \\
+$$ P\left(\ket{\psi}_{\text{final}} \to \ket{-}\right) = \sin^2\left(\frac{\chi}{2}\right) \quad \left(\phi + \sum_i \phi_i = \pi\right) $$
 
-P\left(\ket{\psi}_{\text{final}} \to \ket{-i}\right) = \frac{1}{2}(1+\sin(\chi)) \quad \left(\phi + \sum_i \phi_i = \frac{3\pi}{2}\right) \\
-$$
+$$ P\left(\ket{\psi}_{\text{final}} \to \ket{-i}\right) = \frac{1}{2}(1+\sin(\chi)) \quad \left(\phi + \sum_i \phi_i = \frac{3\pi}{2}\right) $$
 
 The realization of the protocol using only 1 qubit could lead to the wrong result probasbilistically. For example, if $P\left(\ket{\psi}_{\text{final}} \to \ket{\text{expected eigenbasis}} \right) \approx 0.5$, we have a 50-50 chances of believing that everybody signed the document when this did not happen in reality if we run the protocol with just 1 qubit. Thus, we need to realize the protocol using multiple qubits and measurements, and let the statistics speak.
 
