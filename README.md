@@ -59,21 +59,13 @@ $$  \ket{\psi}_{\text{final}} = \frac{\ket{0} +
 
 We recognize that $\left(\phi + \sum_i \phi_i\right)\mod 2\pi \in \mathbf{\Phi}$, and thus we have 4 distinct possibilities for the final state (remember, QSign knows the value of all randomly chosen phases of the executives). Depending on the final state, QSign measures it in the appropriate basis, expecting a projection on the corresponding eigenbasis **if everyone signed the document**.
 
-$$ 
-\phi + \sum_i\phi_i = 0 \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{+}\\
-$$
+$$ \phi + \sum_i\phi_i = 0 \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{+}\\ $$
 
-$$
-\phi + \sum_i\phi_i = \frac{\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{i}\\
-$$
+$$ \phi + \sum_i\phi_i = \frac{\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{i}\\ $$
 
-$$
-\phi + \sum_i\phi_i = \pi \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{-}\\
-$$
+$$ \phi + \sum_i\phi_i = \pi \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{-}\\ $$
 
-$$
-\phi + \sum_i\phi_i = \frac{3\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{-i}\\
-$$
+$$ \phi + \sum_i\phi_i = \frac{3\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{-i}\\ $$
 
 By inspecting the final result, we can know whether everyone has truthfully signed the document or not.
 
