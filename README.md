@@ -29,7 +29,7 @@ Then, we apply a gate with this randomly chosen phase as well as an additional p
 
 $$\ket{\psi} =R_z\left(\phi - \frac{2\pi s}{p} \right)\ket{+} = \frac{\ket{0} + e^{i(\phi - \frac{2\pi s}{p})}\ket{1}}{\sqrt{2}} $$
 
-We proceed by publicly announcing the prime number $p$, as well as 3 interpolation points $\{x_1,x_2,x_3\} = \{1,2,3\}$, each one belonging to an executive. Then, we privately communicate to the executives an evalutation of the polynomial at their corresponding interpolation point (for example, executive $i$ receives $f(x_i)$).
+We proceed by publicly announcing the prime number $p$, as well as 3 interpolation points $\{x_1,x_2,x_3\} = \{1,2,3\}$, each one belonging to an executive. Then, we privately communicate to the executives an evalutation of the polynomial at their corresponding interpolation point (for example, executive $i$ receives f($x_i$) ).
 
 ##
 
