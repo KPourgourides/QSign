@@ -1,0 +1,36 @@
+[
+{
+"name": "default",
+"nodes": [
+{
+"QSign": {
+"app_socket": ["localhost", 8941],
+"qnodeos_socket": ["localhost", 8942],
+"vnode_socket": ["localhost", 8943]
+}
+},
+{
+"CEO": {
+"app_socket": ["localhost", 8951],
+"qnodeos_socket": ["localhost", 8952],
+"vnode_socket": ["localhost", 8953]
+}
+},
+{
+"CFO": {
+"app_socket": ["localhost", 8961],
+"qnodeos_socket": ["localhost", 8962],
+"vnode_socket": ["localhost", 8963]
+}
+},
+{
+"CLO": {
+"app_socket": ["localhost", 8971],
+"qnodeos_socket": ["localhost", 8972],
+"vnode_socket": ["localhost", 8973]
+}
+}
+],
+"topology": null
+}
+]
