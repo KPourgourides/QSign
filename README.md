@@ -23,7 +23,7 @@ $$ f(x) = s + \alpha x + \beta x^2 \mod p$$
 
 where $p$ is a prime number, and the intercept of the polynomial $s=f(0)$ is referred to as the "secret". We proceed by randomly choosing a random phase 
 
-$$ \phi \in \mathbf{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2} \} $$
+$$ \phi \in \bf{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2}\} $$
 
 Then, we apply a gate with this randomly chosen phase as well as an additional phase based on the polynomial secret on a qubit which is initially in the $\ket{+}$ state
 
