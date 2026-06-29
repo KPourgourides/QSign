@@ -23,7 +23,7 @@ $$ f(x) = s + \alpha x + \beta x^2 \mod p$$
 
 where $p$ is a prime number, and the intercept of the polynomial $s=f(0)$ is referred to as the "secret". We proceed by randomly choosing a random phase 
 
-$$\phi \in \boldsymbol{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2} \}$$
+$$\phi \in \mathbf{\Phi} = \{0, \frac{\pi}{2},\pi,\frac{3\pi}{2} \}$$
 
 Then, we apply a gate with this randomly chosen phase as well as an additional phase based on the polynomial secret on a qubit which is initially in the $\ket{+}$ state
 
@@ -33,7 +33,7 @@ We proceed by publicly announcing the prime number $p$, as well as 3 interpolati
 
 ##
 
-At this point, we teleport $\ket{\psi}$ to the executive with the first interpolation point $x_1$ by making an EPR pair with them and sending them the corrections over a classical channel. The executive randomly picks a phase $\phi_1 \in \boldsymbol{\Phi}$, and computes the Lagrange coefficient $c_1$. The calculation of this coefficient will become apparent later in the protocol
+At this point, we teleport $\ket{\psi}$ to the executive with the first interpolation point $x_1$ by making an EPR pair with them and sending them the corrections over a classical channel. The executive randomly picks a phase $\phi_1 \in \mathbf{\Phi}$, and computes the Lagrange coefficient $c_1$. The calculation of this coefficient will become apparent later in the protocol
 
 $$c_1 = \left[f(x_1)\prod_{i>0, i\neq 1}^{3}\frac{x_i}{x_i-x_1}\right]\mod p $$
 
@@ -57,17 +57,20 @@ $$  \ket{\psi}_{\text{final}} = \frac{\ket{0} +
     e^{i\left[\phi + \sum_i\phi_i \right]}
     \ket{1}}{\sqrt{2}} $$
 
-We recognize that $\left(\phi + \sum_i \phi_i\right)\mod 2\pi \in \boldsymbol{\Phi}$, and thus we have 4 distinct possibilities for the final state (remember, QSign knows the value of all randomly chosen phases of the executives). Depending on the final state, QSign measures it in the appropriate basis, expecting a projection on the corresponding eigenbasis **if everyone signed the document**.
+We recognize that $\left(\phi + \sum_i \phi_i\right)\mod 2\pi \in \mathbf{\Phi}$, and thus we have 4 distinct possibilities for the final state (remember, QSign knows the value of all randomly chosen phases of the executives). Depending on the final state, QSign measures it in the appropriate basis, expecting a projection on the corresponding eigenbasis **if everyone signed the document**.
 
 $$ 
 \phi + \sum_i\phi_i = 0 \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{+}\\
 $$
+
 $$
 \phi + \sum_i\phi_i = \frac{\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}+i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{i}\\
 $$
+
 $$
 \phi + \sum_i\phi_i = \pi \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in X basis, will project on }\ket{-}\\
 $$
+
 $$
 \phi + \sum_i\phi_i = \frac{3\pi}{2} \rightarrow \ket{\psi}_{\text{final}} = \frac{\ket{0}-i\ket{1}}{\sqrt{2}} \rightarrow \text{Measure in Y basis, will project on }\ket{-i}\\
 $$
